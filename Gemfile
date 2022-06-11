@@ -38,6 +38,8 @@ group :development, :test do
   gem 'shoulda-matchers', '~> 3.1'
   gem 'orderly'
   gem 'figaro'
+  gem 'factory_bot_rails'
+  gem 'faker'
 end
 
 group :test do
