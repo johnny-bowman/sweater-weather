@@ -6,7 +6,7 @@ RSpec.describe 'Image request' do
 
     expect(response).to be_successful
     image = JSON.parse(response.body, symbolize_names: true)[:data]
-
+  
     expect(image[:id]).to eq(nil)
     expect(image[:type]).to eq('image')
     expect(image[:attributes]).to be_a(Hash)
