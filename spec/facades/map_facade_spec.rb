@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'Weather facade' do
+RSpec.describe 'Map facade' do
   before do
     @coordinates = MapFacade.get_coordinates('denver,co')
   end
