@@ -38,6 +38,8 @@ group :development, :test do
   gem 'shoulda-matchers', '~> 3.1'
   gem 'orderly'
   gem 'figaro'
+  gem 'factory_bot_rails'
+  gem 'faker'
 end
 
 group :test do
@@ -54,3 +56,4 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'faraday'
+gem 'jsonapi-serializer'
