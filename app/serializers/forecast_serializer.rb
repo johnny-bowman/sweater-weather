@@ -1,7 +1,7 @@
-class WeatherSerializer
+class ForecastSerializer
   include JSONAPI::Serializer
 
-  def weather(data)
+  def forecast(data)
     {
       data: {
         id: nil,
