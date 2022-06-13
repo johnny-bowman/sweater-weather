@@ -1,5 +1,4 @@
 class ForecastSerializer
-  # include JSONAPI::Serializer
   class << self
     def forecast(data)
       {

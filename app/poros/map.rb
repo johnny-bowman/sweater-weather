@@ -1,8 +1,9 @@
 class Map
-  attr_reader :lat, :lng
+  attr_reader :lat, :lng, :location
 
   def initialize(data)
-    @lat = data[:lat]
-    @lng = data[:lng]
+    @lat = data[:latLng][:lat]
+    @lng = data[:latLng][:lng]
+    @location = data[:adminArea5]
   end
 end
