@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - openresty
       Date:
-      - Mon, 13 Jun 2022 02:12:21 GMT
+      - Mon, 13 Jun 2022 02:12:20 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -96,5 +96,5 @@ http_interactions:
         rain","icon":"10d"}],"clouds":0,"pop":0.23,"rain":0.22,"uvi":12},{"dt":1655578800,"sunrise":1655551899,"sunset":1655605834,"moonrise":1655532000,"moonset":1655568600,"moon_phase":0.67,"temp":{"day":306.82,"min":294.06,"max":309.21,"night":301.82,"eve":307.48,"morn":294.06},"feels_like":{"day":304.37,"night":300.45,"eve":304.98,"morn":293.17},"pressure":1007,"humidity":13,"dew_point":275.03,"wind_speed":8.8,"wind_deg":186,"wind_gust":10.6,"weather":[{"id":800,"main":"Clear","description":"clear
         sky","icon":"01d"}],"clouds":0,"pop":0.19,"uvi":12},{"dt":1655665200,"sunrise":1655638307,"sunset":1655692250,"moonrise":1655620380,"moonset":1655659380,"moon_phase":0.7,"temp":{"day":304.92,"min":294.88,"max":307.71,"night":294.9,"eve":301.87,"morn":294.88},"feels_like":{"day":302.83,"night":294.54,"eve":300.69,"morn":294.23},"pressure":1008,"humidity":18,"dew_point":277.84,"wind_speed":6.21,"wind_deg":164,"wind_gust":8.64,"weather":[{"id":801,"main":"Clouds","description":"few
         clouds","icon":"02d"}],"clouds":11,"pop":0.32,"uvi":12}]}'
-  recorded_at: Mon, 13 Jun 2022 02:12:21 GMT
+  recorded_at: Mon, 13 Jun 2022 02:12:20 GMT
 recorded_with: VCR 6.1.0
