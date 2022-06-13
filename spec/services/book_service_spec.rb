@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe 'Book Service' do
   it 'gets book results for given location', :vcr do
     response = BookService.get_book('denver,co')
-
+    
     expect(response).to be_a Hash
     expect(response[:docs]).to be_a(Array)
     expect(response[:numFound]).to be_a(Integer)
