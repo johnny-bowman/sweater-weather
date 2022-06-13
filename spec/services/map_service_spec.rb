@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'Map service' do
-  it 'returns longitude & latitude for location' do
+  it 'returns longitude & latitude for location', :vcr do
     response = MapService.get_coordinates('denver,co')
 
     expect(response).to be_a Hash
