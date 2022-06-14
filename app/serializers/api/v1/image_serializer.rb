@@ -1,4 +1,4 @@
-class ImageSerializer
+class Api::V1::ImageSerializer
   def self.image(data)
     {
       data: {

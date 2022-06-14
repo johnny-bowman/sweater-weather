@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'Users request' do
+RSpec.describe 'Register request' do
   describe 'happy paths' do
     it 'creates user and returns user info' do
       user = {
@@ -11,7 +11,7 @@ RSpec.describe 'Users request' do
       headers = {"CONTENT_TYPE" => "application/json"}
       post "/api/v1/users", headers: headers, params: JSON.generate(user)
 
-      expect(response).to be_successful
+      expect(response.status).to eq(200)
       user = JSON.parse(response.body, symbolize_names: true)[:data]
 
       expect(user[:type]).to eq('users')
