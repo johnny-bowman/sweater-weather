@@ -23,6 +23,10 @@ class Api::V1::UserSerializer
       end
     end
 
+    def credential_error
+      { error: 'email or password is incorrect' }
+    end
+
     def new_session(user)
       {
         data: {
