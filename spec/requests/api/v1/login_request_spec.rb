@@ -26,19 +26,20 @@ RSpec.describe 'Login request' do
   end
 
   describe 'sad paths' do
-    xit "returns error if passwords don't match" do
+    it "returns error if email doesn't exist" do
       user = {
-        email: 'bonnyjowman@fake.com',
+        email: 'blingbling@fake.com',
         password: 'password',
-        password_confirmation: 'blingbling'
+        password_confirmation: 'password'
       }
+
       headers = {"CONTENT_TYPE" => "application/json"}
-      post "/api/v1/users", headers: headers, params: JSON.generate(user)
+      post "/api/v1/sessions", headers: headers, params: JSON.generate(user)
 
       expect(response.status).to eq(400)
       error = JSON.parse(response.body, symbolize_names: true)[:error]
 
-      expect(error).to eq("password confirmation doesn't match password")
+      expect(error).to eq("email or password is incorrect")
     end
   end
 end
