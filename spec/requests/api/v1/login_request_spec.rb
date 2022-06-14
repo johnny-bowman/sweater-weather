@@ -41,5 +41,22 @@ RSpec.describe 'Login request' do
 
       expect(error).to eq("email or password is incorrect")
     end
+
+    it "returns error if password is wrong" do
+      User.create!(email: 'bonnyjowman@fake.com', password: 'password', api_key: 'asdkfh087fd')
+
+      user = {
+        email: 'bonnyjowman@fake.com',
+        password: 'blingbling',
+      }
+
+      headers = {"CONTENT_TYPE" => "application/json"}
+      post "/api/v1/sessions", headers: headers, params: JSON.generate(user)
+
+      expect(response.status).to eq(400)
+      error = JSON.parse(response.body, symbolize_names: true)[:error]
+
+      expect(error).to eq("email or password is incorrect")
+    end
   end
 end
