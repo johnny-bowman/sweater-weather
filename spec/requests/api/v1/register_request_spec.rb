@@ -11,7 +11,7 @@ RSpec.describe 'Register request' do
       headers = {"CONTENT_TYPE" => "application/json"}
       post "/api/v1/users", headers: headers, params: JSON.generate(user)
 
-      expect(response.status).to eq(200)
+      expect(response.status).to eq(201)
       user = JSON.parse(response.body, symbolize_names: true)[:data]
 
       expect(user[:type]).to eq('users')
