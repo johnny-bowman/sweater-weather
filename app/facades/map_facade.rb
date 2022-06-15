@@ -7,7 +7,7 @@ class MapFacade
 
     def get_route(from, to)
       json = MapService.get_route(from, to)
-      
+      Route.new(json[:route], from, to)
     end
   end
 end
