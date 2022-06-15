@@ -1,4 +1,4 @@
-class ForecastSerializer
+class Api::V1::ForecastSerializer
   class << self
     def forecast(data)
       {

@@ -1,4 +1,4 @@
-class BookSerializer
+class Api::V1::BookSerializer
   class << self
     def books(books, location, forecast)
       {
