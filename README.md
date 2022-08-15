@@ -5,11 +5,6 @@
 ![simplecov](https://img.shields.io/gem/v/simplecov?color=blue&label=simplecov) <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-
-## **Background and Description**
-
-This app exposes six different endpoints to an imaginary Front End which allows users to get weather forecasts for road-trip destinations. The app allows users to see the current weather as well as the forecasted weather at the destination, at their ETA.
-
 ## **Table of Contents**
 - [Background and Description](#background-and-description)
 - [Learning Goals](#learning-goals)
@@ -19,7 +14,11 @@ This app exposes six different endpoints to an imaginary Front End which allows 
     - [APIs](#apis-consumed)
     - [SetUp](#setup)
 - [Endpoints](#endpoints-provided)
-- [Contributors](#contributors-)
+
+## **Background and Description**
+
+This app exposes six different endpoints to an imaginary Front End which allows users to get weather forecasts for road-trip destinations. The app allows users to see the current weather as well as the forecasted weather at the destination, at their ETA.
+
 ## **Learning Goals**
 
 - Expose an API that aggregates data from multiple external APIs
@@ -27,11 +26,9 @@ This app exposes six different endpoints to an imaginary Front End which allows 
 - Expose an API for CRUD functionality
 - Research, select, and consume an API based on your needs as a developer
 
-
-
 ## **Requirements and Setup (for Mac):**
 
-### **Ruby and Rails**
+### **Ruby and Rails Versions**
 - Ruby Version 2.7.4
 - Rails Version 5.2.8
 
